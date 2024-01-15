@@ -1,0 +1,14 @@
+C:\HanGulClock\hangulClock\hangulClock\bin\Debug\hangulClock.exe.config
+C:\HanGulClock\hangulClock\hangulClock\bin\Debug\hangulClock.exe
+C:\HanGulClock\hangulClock\hangulClock\bin\Debug\hangulClock.pdb
+C:\HanGulClock\hangulClock\hangulClock\obj\Debug\hangulClock.csproj.AssemblyReference.cache
+C:\HanGulClock\hangulClock\hangulClock\obj\Debug\MainWindow.baml
+C:\HanGulClock\hangulClock\hangulClock\obj\Debug\MainWindow.g.cs
+C:\HanGulClock\hangulClock\hangulClock\obj\Debug\App.g.cs
+C:\HanGulClock\hangulClock\hangulClock\obj\Debug\hangulClock_MarkupCompile.cache
+C:\HanGulClock\hangulClock\hangulClock\obj\Debug\hangulClock.g.resources
+C:\HanGulClock\hangulClock\hangulClock\obj\Debug\hangulClock.Properties.Resources.resources
+C:\HanGulClock\hangulClock\hangulClock\obj\Debug\hangulClock.csproj.GenerateResource.cache
+C:\HanGulClock\hangulClock\hangulClock\obj\Debug\hangulClock.csproj.CoreCompileInputs.cache
+C:\HanGulClock\hangulClock\hangulClock\obj\Debug\hangulClock.exe
+C:\HanGulClock\hangulClock\hangulClock\obj\Debug\hangulClock.pdb

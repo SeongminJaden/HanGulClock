@@ -1,0 +1,207 @@
+﻿<Window x:Class="hangulClock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="그리드만 남기기" Height="500" Width="1000"
+        WindowStyle="None" AllowsTransparency="True"
+        ResizeMode="NoResize" Background="Transparent"
+        MouseDown="Window_MouseDown">
+    <Grid x:Name="grid">
+        <Grid.ColumnDefinitions>
+            <!-- 왼쪽 500은 텍스트박스 영역 -->
+            <ColumnDefinition Width="500"/>
+            <!-- 오른쪽 500은 그리드(셀) 영역 -->
+            <ColumnDefinition Width="500"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- 왼쪽 500은 텍스트박스 영역 -->
+        <Border Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel>
+                <TextBlock Text="성민아, 오늘 하루도 고생했어." 
+                   TextWrapping="Wrap" 
+                   FontSize="30" 
+                   Foreground="White"/>
+                <TextBlock Text="넌 항상 빛날거야." 
+                   TextWrapping="Wrap" 
+                   FontSize="30" 
+                   Foreground="White"/>
+            </StackPanel>
+        </Border>
+
+
+
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- 6x6 박스 -->
+            <Border Grid.Row="0" Grid.Column="0" BorderBrush="White" BorderThickness="4,4,0,0"/>
+            <Border Grid.Row="0" Grid.Column="1"/>
+            <Border Grid.Row="0" Grid.Column="2"/>
+            <Border Grid.Row="0" Grid.Column="3"/>
+            <Border Grid.Row="0" Grid.Column="4"/>
+            <Border Grid.Row="0" Grid.Column="5"/>
+            <Border Grid.Row="0" Grid.Column="6"/>
+            <Border Grid.Row="0" Grid.Column="7"/>
+            <!-- 0 -->
+            <Border Grid.Row="1" Grid.Column="0"/>
+            <Border x:Name="textBlock_1_1" Grid.Row="1" Grid.Column="1">
+                <TextBlock Text="한" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="White"/>
+            </Border>
+            <Border x:Name="textBlock_1_2" Grid.Row="1" Grid.Column="2">
+                <TextBlock Text="두" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_1_3" Grid.Row="1" Grid.Column="3">
+                <TextBlock Text="세" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_1_4" Grid.Row="1" Grid.Column="4">
+                <TextBlock Text="네" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_1_5" Grid.Row="1" Grid.Column="5">
+                <TextBlock Text="다" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_1_6" Grid.Row="1" Grid.Column="6">
+                <TextBlock Text="섯" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="7"/>
+
+            <!-- 1 -->
+            <Border Grid.Row="2" Grid.Column="0"/>
+            <Border x:Name="textBlock_2_1" Grid.Row="2" Grid.Column="1">
+                <TextBlock Text="여" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_2_2" Grid.Row="2" Grid.Column="2">
+                <TextBlock Text="섯" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_2_3" Grid.Row="2" Grid.Column="3">
+                <TextBlock Text="일" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_2_4" Grid.Row="2" Grid.Column="4">
+                <TextBlock Text="곱" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_2_5" Grid.Row="2" Grid.Column="5">
+                <TextBlock Text="여" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_2_6" Grid.Row="2" Grid.Column="6">
+                <TextBlock Text="덟" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="7"/>
+
+            <!-- 2 -->
+            <Border Grid.Row="3" Grid.Column="0"/>
+            <Border x:Name="textBlock_3_1" Grid.Row="3" Grid.Column="1">
+                <TextBlock Text="아" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_3_2" Grid.Row="3" Grid.Column="2">
+                <TextBlock Text="홉" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_3_3" Grid.Row="3" Grid.Column="3">
+                <TextBlock Text="열" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_3_4" Grid.Row="3" Grid.Column="4">
+                <TextBlock Text="한" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_3_5" Grid.Row="3" Grid.Column="5">
+                <TextBlock Text="두" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_3_6" Grid.Row="3" Grid.Column="6">
+                <TextBlock Text="시" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="White"/>
+            </Border>
+            <Border Grid.Row="3" Grid.Column="7"/>
+
+            <!-- 3 -->
+            <Border Grid.Row="4" Grid.Column="0"/>
+            <Border x:Name="textBlock_4_1" Grid.Row="4" Grid.Column="1">
+                <TextBlock Text="자" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_4_2" Grid.Row="4" Grid.Column="2">
+                <TextBlock Text="이" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_4_3" Grid.Row="4" Grid.Column="3">
+                <TextBlock Text="삼" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_4_4" Grid.Row="4" Grid.Column="4">
+                <TextBlock Text="사" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_4_5" Grid.Row="4" Grid.Column="5">
+                <TextBlock Text="오" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_4_6" Grid.Row="4" Grid.Column="6">
+                <TextBlock Text="십" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border Grid.Row="4" Grid.Column="7"/>
+
+            <!-- 4 -->
+            <Border Grid.Row="5" Grid.Column="0"/>
+            <Border x:Name="textBlock_5_1" Grid.Row="5" Grid.Column="1">
+                <TextBlock Text="정" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_5_2" Grid.Row="5" Grid.Column="2">
+                <TextBlock Text="일" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_5_3" Grid.Row="5" Grid.Column="3">
+                <TextBlock Text="이" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_5_4" Grid.Row="5" Grid.Column="4">
+                <TextBlock Text="삼" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_5_5" Grid.Row="5" Grid.Column="5">
+                <TextBlock Text="사" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_5_6" Grid.Row="5" Grid.Column="6">
+                <TextBlock Text="육" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border Grid.Row="5" Grid.Column="7"/>
+
+            <!-- 5 -->
+            <Border Grid.Row="6" Grid.Column="0"/>
+            <Border x:Name="textBlock_6_1" Grid.Row="6" Grid.Column="1">
+                <TextBlock Text="오" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_6_2" Grid.Row="6" Grid.Column="2">
+                <TextBlock Text="오" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_6_3" Grid.Row="6" Grid.Column="3">
+                <TextBlock Text="칠" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_6_4" Grid.Row="6" Grid.Column="4">
+                <TextBlock Text="팔" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_6_5" Grid.Row="6" Grid.Column="5">
+                <TextBlock Text="구" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border x:Name="textBlock_6_6" Grid.Row="6" Grid.Column="6">
+                <TextBlock Text="분" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="Gray"/>
+            </Border>
+            <Border Grid.Row="6" Grid.Column="7"/>
+
+            <Border Grid.Row="7" Grid.Column="0"/>
+            <Border Grid.Row="7" Grid.Column="1"/>
+            <Border Grid.Row="7" Grid.Column="2"/>
+            <Border Grid.Row="7" Grid.Column="3"/>
+            <Border Grid.Row="7" Grid.Column="4"/>
+            <Border Grid.Row="7" Grid.Column="5"/>
+            <Border Grid.Row="7" Grid.Column="6"/>
+            <Border Grid.Row="7" Grid.Column="7" BorderBrush="White" BorderThickness="0,0,4,4"/>
+        </Grid>
+    </Grid>
+</Window>
+
